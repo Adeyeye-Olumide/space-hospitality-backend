@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 app.use(cors())
 
-app.post('/payment', cors(), async (req, res)=> {
+app.post('/', cors(), async (req, res)=> {
     try {
 
         const { amount } = req.body
