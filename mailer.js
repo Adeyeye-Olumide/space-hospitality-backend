@@ -18,7 +18,7 @@ app.use(bodyParser.json())
 app.use(cors())
 const port = 3001
 
-app.post('/transaction', async(req, res)=> {
+app.post('/', async(req, res)=> {
     
 
     const {amount, booking, name, email} = req.body
